@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.pokestats.R
 import com.example.pokestats.ui.button.TextButtonWithIconComponent
+import com.example.pokestats.ui.image.ComplexWebImageComponent
 import com.example.pokestats.ui.image.SimpleImageComponent
 
 @Composable
@@ -27,7 +28,8 @@ fun ItemCardComponent(
     currentValue: Double,
     variationHour: Double,
     variationDay: Double,
-    variationMonth: Double
+    variationMonth: Double,
+    imageLink: String
 ) {
     var isExpanded by remember { mutableStateOf(false) }
 
@@ -50,7 +52,7 @@ fun ItemCardComponent(
                     .padding(8.dp)
             ) {
                 Text(text = id.toString(), fontSize = 48.sp, modifier = Modifier.padding(4.dp))
-                SimpleImageComponent(id = R.drawable.master_ball, description = "Card Image", dimensions = 72)
+                ComplexWebImageComponent(link = imageLink)
                 Column(
                     verticalArrangement = Arrangement.SpaceEvenly,
                     horizontalAlignment = Alignment.CenterHorizontally
