@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_icon_dimensions">150</dimen>
+    <dimen name="main_screen_padding">24</dimen>
+    <dimen name="main_button_width">200</dimen>
+    <dimen name="main_button_height">40</dimen>
+</resources>
